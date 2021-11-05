@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Üzenetküldés a Dupla Paduc Bt.-nek</title>
+	<link rel="stylesheet" type="text/css" href="kinezet1.css">
+</head>
+
+<body>
+	<header>
+		<img src="logo.png" alt="logo">
+		<h1>Paduchorgászok lapja</h1>
+	</header>
+	
+	<div id="foegyseg">
+        <aside id="nav">
+			<nav>
+				<ul>
+					<li><a href="home.html">Főoldal</a></li>
+					<li><a href="termekek.html">Termékek</a></li>
+					<li><a href="kapcsolat.html">Kapcsolat</a></li>
+					<li class="active"><a href="uzenetek.html">Üzenetek</a></li>
+				</ul>
+			</nav>
+		</aside>
+        <div id="tart">
+		            
+			<form action="feldolgoz.php" method="post">
+								
+				<fieldset id="uzenet1">
+					<legend><h2>Üzenetküldés:</h2></legend>
+						<p>Kedves Látogatónk! Írja meg véleményét és küldje el nekünk az alábbi adatok megadásával!</p>
+						
+						<p>
+							<label for="vezeteknev"><strong>Vezetéknév:</strong></label>
+							<input type="text" size="15" name="vezeteknev" id="vezeteknev" maxlength="15">
+							<label for="keresztnev"><strong>Keresztnév:</strong></label>
+							<input type="text" size="15" name="keresztnev" id="keresztnev" maxlength="15">
+						</p>
+			
+						<p>
+						  <label for="emailcim"><strong>E-mail cím*:</strong></label>
+						  <input type="email" size="30" name="emailcim" id="emailcim" required>
+						</p>
+						
+						<p>
+						 <label for="velemeny"><strong>Vélemény a honlapról*:</strong></label>
+						<br>
+						<textarea cols="50" rows="10" name="velemeny" id="velemeny" placeholder="A véleményem:" required></textarea>
+						</p>
+			
+						<h3>Szavazzon Ön is az év halára!</h3>
+							<p>
+								<input type="radio" name="evhala" id="id_paduc" value="1">
+								<label for="id_paduc">Paduc</label>
+								<br>
+								<input type="radio" name="evhala" id="id_sullo" value="2">
+								<label for="id_sullo">Süllő</label>
+								<br>
+								<input type="radio" name="evhala" id="id_marna" value="3">
+								<label for="id_marna">Márna</label>
+							</p>
+			
+							<p>
+								<input type="checkbox" name="szabalyzat" id="szabalyzat" value="igen" required>
+								<label for="szabalyzat">A szabályzatokat (GDPR, ÁFSZ) elfogadom*</label>
+								<br>
+								<input type="checkbox" name="hirlevel" id="hirlevel" value="1">
+								<label for="hirlevel">Legyenek szívesek nekem hírlevelet küldeni</label>
+							</p>
+		   
+							<p>
+							  <input type="submit" value="Elküld">
+							  <input type="reset" value="Alaphelyzetbe állít">
+							</p>
+							<p>*-gal jelölt mezők kitöltése kötelező</p>
+				</fieldset>
+			</form>
+			
+		</div>
+    </div>
+	
+    <footer>
+		<h1>&copy;&nbsp;Copyright 2020. Dupla Paduc Bt.</h1>
+    </footer>
+</body>
+</html>
