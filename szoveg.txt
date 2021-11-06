@@ -6,3 +6,4 @@ git config --global user.name "Your Name"
 
 Ez meg a sokadik sor
 Ez már a harmadik sor
+Ez már a hubon van...
