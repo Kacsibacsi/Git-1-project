@@ -2,8 +2,8 @@
   $d = array(
     'hosszu' => '2020. október 17.',
     'ev'     => '2020.',
-    'ho'     => '10.',
-    'nap'    => '17.'
+    'ho'     => '11.',
+    'nap'    => '19.'
   )
 ?>
 <!DOCTYPE html>
